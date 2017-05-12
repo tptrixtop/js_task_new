@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="auto.js"></script>
+    <script>
+        let a = auto();
+        console.log(a);
+
+        a.pressKlaxon();
+
+        console.log('Required license: %s', auto.getRequiredLicenseCategory(a));
+
+        let cab = cabriolet(320, 40, 'B');
+        console.log(cab);
+
+        cab.pressKlaxon();
+
+        console.log('Required license: %s', auto.getRequiredLicenseCategory(cab));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
